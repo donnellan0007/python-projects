@@ -20,7 +20,8 @@ def user_crossword():
             print(look)
             if look in word:
                 print('Found a bit of the word for you!')
-        print(word)
+            else:
+                print(word)
         if looking_for in word:
             pass
 
