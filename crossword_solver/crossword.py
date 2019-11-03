@@ -1,4 +1,4 @@
-__author__ = 'Seamus Donnellan | u/insane_playzYT
+__author__ = 'Seamus Donnellan | u/insane_playzYT'
 
 def load_words():
     with open('words.txt') as word_file:

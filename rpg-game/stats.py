@@ -1,0 +1,8 @@
+class_char = ""
+base_damage = ""
+damage = ""
+stamina = ""
+patience = ""
+loyalty = ""
+wisdom = ""
+strength = ""
