@@ -13,7 +13,7 @@ def game():
     opponent = ""
     opponent_weapon = ""
     opponent_health = 0
-    
+
 
     message = input("Choose your class: [Knight, Wizard, Archer, Troll]: ")
     if message == "knight" or message == "Knight":
@@ -54,7 +54,7 @@ def game():
         weapons = ['Hands',]
     # print(f"Strength: {strength} | Character Class {char_class} | Loyalty {loyalty} | Wisdom {wisdom} | Weapon Damage {weapon_dmg}")
 
-    print("Welcome to the game. You will play now. Also, for story purposes, the troll and archer are on one team, and the knight and wizard are on the other")
+    message = input("Welcome to the game. You will play now. Also, for story purposes, the troll and archer are on one team, and the knight and wizard are on the other. Also this first bit is the tutorial, so if you wanna skip, which is recommended, type EXIT: ")
     print()
     if char_class is "Troll" or char_class is "Archer":
         print("You are walking in the forest when you see something up ahead of you. It is very faint, but there is a glow. You don't know what it is. \n You have 2 options. Do you run straight towards the light, or sneak up on it? \n")
@@ -77,6 +77,8 @@ def game():
                         health -= 15
                         print(f"Stats: \n Stamina: {stamina} \n Health: {health} \n You lay into him with your {weapons}. The wizard starts screeching and fires his wand back at you, giving you a taste of medicine. Your health is now down to {health}%. You have to do something. ")
 
+    if message == "EXIT" or message == "exit":
+        pass
 
 
 game()
